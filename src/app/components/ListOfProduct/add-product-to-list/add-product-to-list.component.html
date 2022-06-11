@@ -1,0 +1,24 @@
+<div class="card">
+<div class="auth-wrapper">
+    <form class="form-signin" [formGroup]="signinForm" (ngSubmit)="addnewProduct()">
+      <h3 class=" mb-3 font-weight-normal h3 ">Dodaj Produkt po kodzie</h3>
+      
+      <div class="form-floating">
+        
+        <input
+          type="text"
+          class="form-control"
+          formControlName="kodCV"
+          placeholder="kodCV"
+        />
+        <label>kodCV</label>
+      </div>
+  
+  
+  
+      <button type="submit" class="btn btn-block btn-primary">Dodaj</button>
+    </form>
+</div>
+</div>
+
+

@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="auth-wrapper">
+  <form
+    class="form-signin"
+    [formGroup]="signupForm"
+    (ngSubmit)="registerUser()"
+  >
+    <h3 class="h3 mb-3 font-weight-normal text-center">Rejestracja Konta</h3>
+    <div class="form-floating">
+      <input formControlName="firstName" class="form-control" placeholder="First Name">
+      <label>Imię</label>
+    </div>
+    <div class="form-floating">
+      <input formControlName="lastName" class="form-control" placeholder="Last Name">
+      <label>Nazwisko</label>
+    </div>
+
+    <div class="form-floating">
+      <input formControlName="email" type="email" class="form-control" placeholder="name@example.com">
+      <label>Email</label>
+    </div>
+
+    <div class="form-floating">
+      <input formControlName="password" type="password" class="form-control" placeholder="Password">
+      <label>Hasło</label>
+    </div>
+
+    <div class="form-floating">
+      <input formControlName="confirmPassword" type="password" class="form-control" placeholder="confirmPassword">
+      <label>Powtórz hasło</label>
+    </div>
+    <button type="submit" class="btn btn-block btn-primary">Utwórz konto</button>
+  </form>
+</div>
+</div>

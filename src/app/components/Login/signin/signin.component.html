@@ -1,0 +1,32 @@
+<div class="card">
+<div class="auth-wrapper">
+  <form class="form-signin" [formGroup]="signinForm" (ngSubmit)="loginUser()">
+    <h3 class=" mb-3 font-weight-normal h3 ">Zaloguj się</h3>
+    <div class="form-floating">
+
+      <input
+        class="form-control"
+        formControlName="userName"
+        placeholder="userName"
+        required
+      />
+      <label>UserName</label>
+    </div>
+
+    <div class="form-floating">
+      
+      <input
+        type="password"
+        class="form-control"
+        formControlName="password"
+        placeholder="Password"
+      />
+      <label>Password</label>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-block btn-primary">Zaloguj się</button>
+  </form>
+</div>
+</div>

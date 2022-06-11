@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="auth-wrapper">
+    <form
+      class="form-signin"
+      [formGroup]="productForm"
+      (ngSubmit)="addNewProduct()"
+    >
+      <h3 class="h3 mb-3 font-weight-normal text-center">Dodawanie Nowego produktu do bazy</h3>
+      <div class="form-floating">
+        <input formControlName="name" class="form-control" placeholder="name">
+        <label>Nazwa</label>
+      </div>
+      <div class="form-floating">
+        <input formControlName="numerCV" class="form-control" placeholder="numerCV">
+        <label>NumerCV</label>
+      </div>
+  
+      <div class="form-floating">
+        <input formControlName="iloscKAlori" class="form-control" placeholder="iloscKAlori">
+        <label>Ilosc Kalori</label>
+      </div>
+  
+      <div class="form-floating">
+        <input formControlName="wielkoscOpakowania" class="form-control" placeholder="wielkoscOpakowania">
+        <label>Wielkosc Opakowania</label>
+      </div>
+
+      <button type="submit" class="btn btn-block btn-primary">Dodaj Produkt do bazy</button>
+    </form>
+  </div>
+  </div>
+  
